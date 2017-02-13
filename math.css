@@ -1,0 +1,112 @@
+math {
+   display:          inline-block;
+   font-family:      serif;
+}
+
+mtext { }
+merror { color: #FF0000; }
+
+mi { font-style: oblique; }
+mn { }
+mo { }
+
+mfenced:before { content: "("; }
+mfenced[open="["]:before { content: "["; }
+mfenced[open="{"]:before { content: "{"; }
+
+mfenced:after { content: ")"; }
+mfenced[close="]"]:after { content: "]"; }
+mfenced[close="}"]:after { content: "}"; }
+
+mfenced > *+*:before {
+   content: ", ";
+}
+
+mphantom {
+   visibility:       hidden;
+}
+
+msup > *+* {
+   display:          inline-block;
+   font-size:        0.7em;
+   vertical-align:   top;
+}
+
+msub > *+* {
+   display:          inline-block;
+   font-size:        0.7em;
+   vertical-align:   bottom;
+}
+
+mfrac {
+   display:          inline-block;
+   font-size:        0.85em;
+   text-align:       center;
+   vertical-align:   middle;
+}
+
+mfrac > * {
+   display:          list-item;
+   list-style:       none;
+   padding-left:     0.25em;
+   padding-right:    0.25em;
+}
+
+mfrac > *+* {
+   border-top:       0.1em solid;
+}
+
+msqrt, mroot {
+   display:          inline-block;
+   position:         relative;
+   vertical-align:   middle;
+   font-size:        0.85em;
+   border-top:       0.1em solid;
+   margin-left:      0.5em;
+   padding-left:     0.25em;
+   padding-right:    0.25em;
+}
+
+msqrt:before, mroot:before {
+   content:          "";
+   display:          inline-block;
+   position:         absolute;
+   top:              -0.25em;
+   left:             -0.35em;
+   width:            0.25em;
+   height:           1em;
+   border-right:     0.0675em solid;
+   border-bottom:    0.125em solid;
+   -webkit-transform:skew(-11.25deg, 63.435deg);
+   -moz-transform:   skew(-11.25deg, 63.435deg);
+   -ms-transform:    skew(-11.25deg, 63.435deg);
+   -o-transform:     skew(-11.25deg, 63.435deg);
+   transform:        skew(-11.25deg, 63.435deg);
+}
+
+mroot > *+* {
+   display:          inline-block;
+   font-size:        0.5em;
+   position:         absolute;
+   top:              -0.375em;
+   right:            100%;
+   padding-right:    0.25em;
+}
+
+mtable {
+   display:          inline-block;
+   vertical-align:   middle;
+}
+
+mtable > * {
+   display:          table-row;
+}
+
+mtr > * {
+   display:          table-cell;
+}
+
+mtr > mrow, mtr > mn, mtr > mi, mtr > mo {
+   padding-left:     0.25em;
+   padding-right:    0.25em;
+}
