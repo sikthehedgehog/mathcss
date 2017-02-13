@@ -9,6 +9,8 @@ See below for what's implemented.
 Just grab `math.css` and include it. No restrictions nor credit needed, just
 do whatever you want. (pretty much public domain or unlicense)
 
+`math.html` is just a test file, if you wonder.
+
 ## Warning
 
 **Note: if you use this stylesheet, you should avoid using the `<math>`
